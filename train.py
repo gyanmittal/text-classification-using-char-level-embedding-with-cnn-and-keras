@@ -55,7 +55,7 @@ print("The sequence length is: ", seq_len)
 x = text_to_sequence(x_text, vocabulary)
 
 # Shuffle data
-np.random.seed(1) #same shuffling each time
+#np.random.seed(1) #same shuffling each time
 shuffle_indices = np.random.permutation(np.arange(len(labels)))
 x = x[shuffle_indices]
 labels = labels[shuffle_indices]
